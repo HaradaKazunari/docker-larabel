@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ViewsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,5 +15,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
+Route::get('/contact', function () {
+    return view('contact');
+});
+
+Route::get('/sendMail', function () {
+    return view('index');
+});
+Route::get('/', function () {
+    return view('index');
+});
+

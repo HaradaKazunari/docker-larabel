@@ -1,0 +1,25 @@
+$main: #000600;
+$sub: #FEF4F4;
+$link: #707070;
+$gray: #A29E9C;
+$er: 5rem;
+
+$pc: 1024px; // PC
+$tab: 768px; // タブレット
+$sp: 414px;  // スマホ
+
+@mixin pc {
+  @media (max-width: ($pc)) {
+    @content;
+  }
+}
+@mixin tab {
+  @media (max-width: ($tab)) {
+    @content;
+  }
+}
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}

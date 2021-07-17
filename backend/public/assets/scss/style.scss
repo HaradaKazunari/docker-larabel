@@ -1,0 +1,163 @@
+@import 'config';
+
+html{
+  //10px
+  font-size: 62.5%;
+}
+body{
+  color: $sub;
+  background-color: $main;
+  width: 100vw;
+  font-family: kozuka-gothic-pr6n, sans-serif;
+  font-style: normal;
+  font-weight: 200 !important;
+}
+h2{
+  font-style: normal;
+  font-weight: 200 !important;
+}
+.title{
+  font-size: 3.2rem;
+  @include tab {
+    font-size: 2.5rem;
+  }
+}
+.fade_off {
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.fade_on {
+  opacity: 1;
+}
+.pc{
+  @include tab{
+    display:none;
+  }
+}
+.tab{
+  display:none;
+  @include tab{
+    display:block;
+  }
+}
+a{
+  color: $link;
+  &:hover{
+  color: currentColor;
+  }
+}
+i{
+  font-size: 1.6rem;
+}
+.anime_border{
+  width: 12%;
+  margin: 0 auto;
+  border-bottom: 0.3px solid $sub;
+  position:absolute;
+  left: 50%;
+  top: 51%;
+  transform:translateX(-50%);
+}
+header{
+  background-color: $main;
+  z-index:1;
+  position: fixed;
+  width: 100%;
+  .border_bottom{
+    width: 0%;
+    margin: 0 auto;
+    border-bottom: 0.3px solid $sub;
+  }
+  .outline{
+    height: 100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    @include tab {
+      height:3rem;
+    }
+    .title{
+      h6{
+        font-size: 1.7rem;
+        font-weight: 300;
+        line-height: $er;
+        @include tab {
+          line-height: 2rem;
+        }
+      }
+    }
+  }
+}
+
+footer{
+  width: 100%;
+  background-color: $main;
+  position: fixed;
+  bottom: 0;
+  opacity:0;
+  transition-delay: 1s;
+  .outline{
+    width: 100%;
+    border: 0.3px solid $sub;
+    height: $er;
+    @include tab {
+      height:3rem;
+    }
+    .content{
+      width: 96%;
+      margin: 0 auto;
+      display:flex;
+      justify-content:space-between;
+      @include tab{
+        width: 90%;
+      }
+    }
+  }
+  .icons{
+    line-height: $er;
+    @include tab {
+      line-height: 3.5rem;
+    }
+    ul{
+      list-style-type:none;
+      width: 100%;
+      display:flex;
+      padding: 0;
+      li{
+        padding-right: 20px;
+      }
+    }
+  }
+  .copyright{
+    .text{
+      p{
+        font-size: 0.9rem;
+        line-height: $er;
+        @include tab {
+          line-height: 3rem;
+        }
+      }
+    }
+  }
+}
+
+.default_outline{
+  width: 84%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 6vh 0;
+}
+.flex{
+  display:flex;
+}
+.pc_flex{
+  display:flex;
+  @include tab{
+    display:block;
+  }
+}
+

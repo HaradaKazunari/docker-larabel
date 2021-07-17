@@ -1,0 +1,44 @@
+#contact {
+  margin-bottom: 40vh; }
+  @media (max-width: 700px) {
+    #contact {
+      margin-bottom: 28vh; } }
+
+#home {
+  opacity: 0;
+  transition: 0.3s;
+  transition-delay: 1s;
+  max-width: 1280px;
+  width: 66.66%;
+  margin: 0 auto; }
+  #home section {
+    width: 100%;
+    height: 60vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    @media (max-width: 700px) {
+      #home section {
+        height: 70vh; } }
+    #home section .home_outline {
+      width: 100%;
+      max-width: 100vh;
+      margin: 0 auto; }
+    #home section .img {
+      width: 100%; }
+      #home section .img img {
+        width: 100%; }
+        @media (max-width: 700px) {
+          #home section .img img {
+            width: 75%;
+            margin: 0 auto; } }
+    #home section .text h2 {
+      margin-top: 2rem; }
+    #home section .text p {
+      font-size: 1.6rem; }
+      @media (max-width: 700px) {
+        #home section .text p {
+          font-size: 1.3rem; } }
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@keyframes height {
+  from {
+    height: 100vh; }
+  to {
+    height: 5rem; } }
+/* 読み込み完了後に「loaded」を付与する */
+.loaded {
+  animation: height 1.7s forwards; }
+
+@keyframes line {
+  from {
+    width: 0%; }
+  to {
+    width: 100%; } }
+.line {
+  animation: line 0.7s forwards; }
+
+@keyframes Top {
+  from {
+    top: 51%;
+    opacity: 1; }
+  to {
+    top: 120%;
+    opacity: 0;
+    display: none; } }
+.top {
+  animation: Top 0.7s forwards; }
+
+/*# sourceMappingURL=loeaded.css.map */
