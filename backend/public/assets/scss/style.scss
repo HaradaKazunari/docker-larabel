@@ -12,7 +12,7 @@ body{
   font-style: normal;
   font-weight: 200 !important;
 }
-h2{
+h2,h3{
   font-style: normal;
   font-weight: 200 !important;
 }
@@ -66,7 +66,9 @@ header{
   background-color: $main;
   z-index:1;
   position: fixed;
+  top: 0;
   width: 100%;
+  padding-top: 1rem;
   .border_bottom{
     width: 0%;
     margin: 0 auto;

@@ -1,7 +1,6 @@
-@include('tmp/head')
-
+<?php include('tmp/head.html') ?>
 <script src="https://kit.fontawesome.com/ca3f6ce531.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="{{asset("assets/css/contact.css")}}">
+<link rel="stylesheet" href="css/contact.css">
 
 <div id="contact">
     <div class="default_outline">
@@ -27,7 +26,7 @@
         </p>
       </div><!-- text -->
       <div class="form">
-        <form action="sendMail" method="post">
+        <form action="contactCom.php" method="post">
           <input type="text" name="name" placeholder="お名前 (Name)">
           <input type="text" name="email" placeholder="メールアドレス (Mail)">
           <input type="text" name="subject" placeholder="件名(Subject)">
@@ -40,4 +39,4 @@
 </div><!-- #contact -->
 
 
-@include('tmp/foot')
+<?php include('tmp/foot.html') ?>

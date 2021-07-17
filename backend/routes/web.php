@@ -17,10 +17,21 @@ use App\Http\Controllers\ViewsController;
 Route::get('/', function () {
     return view('index');
 });
+Route::get('/art', function () {
+    return view('art');
+});
+Route::get('/schattenu', function () {
+    return view('schatten');
+});
+Route::get('/profile', function () {
+    return view('profile');
+});
 Route::get('/contact', function () {
     return view('contact');
 });
-
+Route::get('/sns', function () {
+    return view('sns');
+});
 Route::get('/sendMail', function () {
     return view('index');
 });

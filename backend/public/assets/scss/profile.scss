@@ -1,0 +1,38 @@
+@import 'config';
+#profile{
+  max-width:1600px;
+  width: 90%;
+  margin: 12rem auto;
+  .pc_flex{
+    width: 100%;
+  }
+  .img{
+    flex:1;
+    order:2;
+    img{
+      width: 100%;
+    }
+  }
+  .text{
+    flex:1;
+    order:1;
+    margin-top: 25%;
+    h2{
+      font-size: 3.4rem;
+      &.name{
+        letter-spacing:1.2rem;
+      }
+    }
+    
+    p{
+      font-size: 1.3rem;
+      &.huri{
+        margin: 0;
+        margin-top: 1.4rem;
+      }
+    }
+    .sns{
+      margin-top: 35%;
+    }
+  }
+}

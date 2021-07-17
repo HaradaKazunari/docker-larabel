@@ -1,0 +1,85 @@
+@import 'config';
+
+#art{
+  max-width:1600px;
+  width: 80%;
+  margin: 12rem auto;
+  p{
+    font-size: 1.3rem;
+  }
+  .art_title{
+    .left{
+      text-align: left;
+      width: 50%;
+      border-bottom: 0.3px solid #707070;
+    }
+    .right{
+      text-align: right;
+      width: 75%;
+      margin-left: auto;
+      margin-top: 2rem;
+      border-bottom: 0.3px solid #707070;
+      @include tab {
+        width: 90%;
+      }
+    }
+  }
+  .work{
+    margin-top: 7rem;
+    padding-bottom: 5rem;
+    border-bottom: 0.3px solid #707070;
+    .pc_flex{
+      width: 100%;
+      justify-content:space-between;
+    }
+    .left{
+      width: 55%;
+      @include tab {
+        width: 100%;
+      }
+      .copy{
+        margin: 9rem 0;
+        h3{
+          font-size: 2.0rem;
+        }
+      }
+      .left_img{
+        img{
+          width: 71%;
+        }
+      }
+    }
+    .right{
+      width: 45%;
+      @include tab{
+        width: 100%;
+      }
+      .right_inline{
+        width: 88%;
+        margin-left: auto;
+        .right_img{
+          width: 100%;
+          img{
+            width: 100%;
+          }
+        }
+        .text{
+          margin-top: 8rem;
+        }
+      }
+    }
+    .tab{
+      width: 100%;
+      .flex{
+        width: 100%;
+        justify-content:space-between;
+        img{
+          width: 45%;
+        }
+      }
+    }
+  }
+  .ing{
+    margin-top: 8rem;
+  }
+}

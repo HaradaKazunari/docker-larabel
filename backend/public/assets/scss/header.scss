@@ -1,0 +1,45 @@
+@import 'config';
+
+header{
+  background-color: $main;
+  z-index:1;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  padding-top: 1rem;
+  .border_bottom{
+    width: 100%;
+    border-bottom: 0.3px solid $sub;
+  }
+  .outline{
+    width: 100%;
+    height: 5rem;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    @include tab {
+      height:3rem;
+    }
+    .title{
+      h6{
+        font-size: 1.7rem;
+        font-weight: 300;
+        line-height: $er;
+        @include tab {
+          line-height: 2rem;
+        }
+      }
+    }
+  }
+  a{
+    color:$sub;
+    text-decoration:none;
+    &:hover{
+      text-decoration:none;
+    }
+    &:active{
+      color:$sub;
+      text-decoration:none;
+    }
+  }
+}

@@ -1,37 +1,5 @@
-$pc: 1000px; // パソコン
-$tab: 700px; // タブレット
-$sp: 480px;  // スマホ
+@import 'config';
 
-$main: #000600;
-$sub: #FEF4F4;
-$link: #707070;
-
-@mixin pc {
-  @media (max-width: ($pc)) {
-    @content;
-  }
-}
-@mixin -pc {
-  @media (min-width: ($pc)) {
-    @content;
-  }
-}
-@mixin tab {
-  @media (max-width: ($tab)) {
-    @content;
-  }
-}
-@mixin sp {
-  @media (max-width: ($sp)) {
-    @content;
-  }
-}
-#contact{
-  margin-bottom: 40vh;
-  @include tab {
-    margin-bottom: 28vh;
-  }
-}
 #home{
   opacity:0;
   transition: 0.3s;
@@ -76,4 +44,7 @@ $link: #707070;
       }
     }
   }
+}
+#contact{
+  margin-bottom: 30rem;
 }

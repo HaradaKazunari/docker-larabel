@@ -13,6 +13,7 @@ $(window).on('load', function(){
     $('.border_bottom').addClass('line');
     $(this).css({ 'opacity':'1', });
     $('footer').css({ 'opacity':'1', });
+    $('.hamburger').css({ 'opacity':'1', });
     return_scroll();
   });
 })
